@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MobileTechApp</string>
+    <string name="list_of_users">Lıst of Users</string>
+    <string name="send_e_mail">Send E-maıl</string>
+    <string name="shared_preferences">Shared Preferences</string>
+    <string name="sensors">Sensors</string>
+    <string name="write_email">Wrıte Emaıl</string>
+    <string name="action_settings" type="id">Settings</string>
+</resources>

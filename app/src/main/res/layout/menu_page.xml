@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffBE80FF"
+              android:paddingTop="240dp"
+              tools:context=".MenuPageActivity" >
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textColor="#ffffffff"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp" />
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingHorizontal="40dp"
+            android:background="#7734AF"
+            android:text="@string/list_of_users"
+            android:id="@+id/recyclerViewList"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#fff"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingHorizontal="45dp"
+            android:background="#7734AF"
+            android:text="@string/send_e_mail"
+            android:id="@+id/emailapp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#fff"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingHorizontal="11dp"
+            android:background="#7734AF"
+            android:text="@string/shared_preferences"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sharedprefapp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#fff"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#7734AF"
+            android:paddingHorizontal="56dp"
+            android:text="@string/sensors"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sensorapp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#fff"/>
+
+
+
+</LinearLayout>

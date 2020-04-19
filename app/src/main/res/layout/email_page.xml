@@ -1,0 +1,29 @@
+<LinearLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="#ffBE80FF"
+              android:paddingTop="200dp">
+
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sending E-Mail"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp" />
+
+
+    <Button
+            android:id="@+id/sendEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/write_email"
+            android:background="#ff7e51c2"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
+            android:paddingVertical="20dp"/>
+
+</LinearLayout>
