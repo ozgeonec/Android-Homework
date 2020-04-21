@@ -35,11 +35,12 @@ public class UserListAdapter extends  RecyclerView.Adapter<UserListAdapter.ViewH
         final UserListData userList = listdata[position];
 
         holder.textView.setText(listdata[position].getUsername());
+        holder.textView2.setText(listdata[position].getPassword());
         holder.imageView.setImageResource(listdata[position].getImgId());
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(),"User: "+userList.getUsername(),Toast.LENGTH_LONG).show();
+                Toast.makeText(view.getContext(),"User: "+userList.getUsername(),Toast.LENGTH_SHORT).show();
             }
         });
     }

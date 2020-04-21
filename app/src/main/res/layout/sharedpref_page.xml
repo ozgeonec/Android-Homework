@@ -119,10 +119,10 @@
             android:text="Mode"/>
 
     <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Save"
-            android:id="@+id/button"
             android:layout_below="@+id/mode"
             android:background="#7734AF"
             android:textColor="#fff"
@@ -138,17 +138,7 @@
             android:background="#7734AF"
             android:textColor="#fff"
             android:text="Clear" />
-    <Button
-            android:id="@+id/btnretrieve"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/button"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_below="@+id/mode"
-            android:background="#7734AF"
-            android:textColor="#fff"
-            android:text="Retrieve" />
+
 
 
 </RelativeLayout>
