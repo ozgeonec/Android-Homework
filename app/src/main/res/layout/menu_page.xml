@@ -4,7 +4,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="#ffBE80FF"
-              android:paddingTop="240dp"
+              android:paddingTop="220dp"
               tools:context=".MenuPageActivity" android:orientation="vertical">
 
     <TextView

@@ -32,7 +32,6 @@ public class SensorActivity extends AppCompatActivity {
     private SensorEventListener listener2;
     private Sensor light;
     private Sensor accelor;
-    //private int counter=0;
     private CountDownTimer timer;
 
 
@@ -74,9 +73,8 @@ public class SensorActivity extends AppCompatActivity {
                 if(event.sensor.getType() == Sensor.TYPE_ACCELEROMETER){
                     float[] vectors = new float[3];
                     vectors = event.values.clone();
-
                     double normalOfVectors = Math.sqrt(vectors[0] * vectors[0] + vectors[1] * vectors[1] + vectors[2] * vectors[2] );
-                    //Normalize
+                    //Normalize işlemi
                     vectors[0] = (float) (vectors[0] / normalOfVectors);
                     vectors[1] = (float) (vectors[1] / normalOfVectors);
                     vectors[2] = (float) (vectors[2]/ normalOfVectors);
@@ -84,13 +82,14 @@ public class SensorActivity extends AppCompatActivity {
                     int inclination = (int) Math.round(Math.toDegrees(Math.acos(vectors[2])));
 
                     if(inclination < 25 || inclination > 155){
-                        //telefon duruyor,countdown başlıyor
+                        //telefon flat halde,countdown başlıyor
                         final TextView counttime = findViewById(R.id.counttime);
-                        timer = new CountDownTimer(5000,1000) {
+                        timer = new CountDownTimer(5200,1000) {
                             @Override
                             public void onTick(long millisUntilFinished) {
                                 int seconds = (int) (millisUntilFinished / 1000) %60;
-                                    counttime.setText("seconds remaining: " +seconds);
+                                counttime.setText("seconds remaining: " +seconds);
+                                Toast.makeText(getApplicationContext(), "Goodbye", Toast.LENGTH_LONG).show();
                             }
                             @Override
                             public void onFinish() {
