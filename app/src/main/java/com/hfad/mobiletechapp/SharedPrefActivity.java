@@ -55,7 +55,7 @@ public class SharedPrefActivity extends AppCompatActivity {
 
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-
+        //Save Data
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,7 +86,7 @@ public class SharedPrefActivity extends AppCompatActivity {
 
             }
         });
-
+        //Clear Data
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,7 +102,7 @@ public class SharedPrefActivity extends AppCompatActivity {
 
             }
         });
-
+        //Retrieve Data
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -17,7 +17,7 @@ public class LoginPageActivity extends AppCompatActivity {
 
     Button button1,button2;
     EditText username,password;
-
+    //Users
     final UserListData[] userlist = new UserListData[]{
             new UserListData("Ozge", "Ozge", android.R.drawable.star_on),
             new UserListData("Amac", "Amac", android.R.drawable.star_on),
@@ -53,7 +53,7 @@ public class LoginPageActivity extends AppCompatActivity {
         username = (EditText)findViewById(R.id.username);
         password = (EditText)findViewById(R.id.password);
 
-        //Login işlemi
+        //Login button
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,7 +79,7 @@ public class LoginPageActivity extends AppCompatActivity {
             }
         });
 
-        //Clear işlemi
+        //Clear button
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

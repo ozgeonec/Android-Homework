@@ -26,7 +26,7 @@ public class EmailActivity extends AppCompatActivity {
             }
         });
     }
-
+    //Send mail
     protected void sendEmail() {
         Log.i("Send email", "");
         String[] TO = {""};
@@ -39,7 +39,7 @@ public class EmailActivity extends AppCompatActivity {
         emailIntent.putExtra(Intent.EXTRA_CC, CC);
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Your subject");
         emailIntent.putExtra(Intent.EXTRA_TEXT, "Email message goes here");
-
+        //Control
         try {
             startActivity(Intent.createChooser(emailIntent, "Send mail..."));
             finish();
